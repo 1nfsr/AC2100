@@ -17,6 +17,9 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 # Modify the version number
 sed -i "s/OpenWrt /HMKJ build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
+
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/other/luci-app-openclash
+
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
